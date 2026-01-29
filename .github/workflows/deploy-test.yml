@@ -22,3 +22,7 @@ jobs:
         run: |
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
+      - name: 사용자 변수 사용 가능하다.
+        run: |
+          echo ${{ secrets.MEM_ID}}
+          echo ${{ secrets.MEM_PW}}
